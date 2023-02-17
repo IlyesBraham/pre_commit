@@ -6,11 +6,11 @@ import os
 import mylib  # noqa (i.e ignore cette erreur)
 
 
-def foo(bar):
+def foo(bar: str):
     print("foo {}".format(bar))
 
 
-def ratio_example_for_mypy(numerator, denominator):
+def ratio_example_for_mypy(numerator: int, denominator: int):
     result = numerator / denominator
     return result
 
